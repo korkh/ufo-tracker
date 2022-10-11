@@ -1,10 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using part1.DAl;
 using part1.Model;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace part1.DAl
+namespace part1.DAL
 {
     public class InfoRepository : IInfoRepository
     {
@@ -19,14 +20,15 @@ namespace part1.DAl
         {
             try
             {
-                var eInfo = await _db.Infoer.FindAsync(editInfo.Id);                
+                var eInfo = await _db.Infoer.FindAsync(editInfo.Id);
+
                 eInfo.Date = editInfo.Date;
                 eInfo.Country = editInfo.Country;
                 eInfo.Shape = editInfo.Shape;
                 eInfo.Country = editInfo.Country;
                 eInfo.Duration = editInfo.Duration;
                 eInfo.Describtion = editInfo.Describtion;
-                
+
                 await _db.SaveChangesAsync();
             }
             catch
