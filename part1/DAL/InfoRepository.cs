@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using part1.DAl;
 using part1.Model;
 using System.Collections.Generic;
 using System.Linq;
