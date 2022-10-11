@@ -1,0 +1,41 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Et skjema</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/2.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/register.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Register Sight</h1>
+        <form class="form">
+            <div class="form-group">
+                <label>Date/Time</label>
+                <input type="text" id="date" />
+            </div>
+            <div class="form-group">
+                <label>Country</label>
+                <input type="text" id="country" />
+            </div>
+            <div class="form-group">
+                <label>Shape</label>
+                <input type="text" id="shape" />
+            </div>
+            <div class="form-group">
+                <label>Duration</label>
+                <input type="text" id="duration" />
+            </div>
+            <div class="form-group">
+                <label>Describtion</label>
+                <input type="text" id="describtion" />
+            </div>
+            <div class="form-group">
+                <input type="button" id="reg" value="Register" onclick="registerInfo()" class="btn btn-primary" />
+            </div>
+            <div id="feil" style="color: red"></div>
+        </form>
+    </div>
+</body>
+</html>
