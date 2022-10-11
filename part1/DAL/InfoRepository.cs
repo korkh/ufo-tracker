@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using part1.DAl;
 using part1.Model;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,7 +20,6 @@ namespace part1.DAL
             try
             {
                 var eInfo = await _db.Infoer.FindAsync(editInfo.Id);
-
                 eInfo.Date = editInfo.Date;
                 eInfo.Country = editInfo.Country;
                 eInfo.Shape = editInfo.Shape;
