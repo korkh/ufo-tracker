@@ -20,6 +20,7 @@ namespace part1.DAL
             try
             {
                 var eInfo = await _db.Infoer.FindAsync(editInfo.Id);
+
                 eInfo.Date = editInfo.Date;
                 eInfo.Country = editInfo.Country;
                 eInfo.Shape = editInfo.Shape;
