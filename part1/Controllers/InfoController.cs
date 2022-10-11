@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using part1.Model;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using part1.DAl;
+using part1.DAL;
 
 namespace part1.Controllers
 {

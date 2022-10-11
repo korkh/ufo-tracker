@@ -1,14 +1,15 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
+using part1.DAl;
 using part1.Model;
 
-namespace part1.DAl
+namespace part1.DAL
 {
     public static class DB_init
     {
         public static void Init(IApplicationBuilder app)
         {
-            using(var sScope = app.ApplicationServices.CreateScope())
+            using (var sScope = app.ApplicationServices.CreateScope())
             {
                 var context = sScope.ServiceProvider.GetService<InfoContext>();
 

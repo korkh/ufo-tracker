@@ -3,7 +3,7 @@ using System.Text;
 using Microsoft.EntityFrameworkCore;
 using part1.Model;
 
-namespace part1.DAl
+namespace part1.DAL
 {
     public class InfoContext : DbContext
     {

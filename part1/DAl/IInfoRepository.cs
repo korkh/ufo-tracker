@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace part1.DAl
+namespace part1.DAL
 {
     public interface IInfoRepository
     {
