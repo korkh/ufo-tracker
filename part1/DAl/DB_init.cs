@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
-using part1.DAl;
 using part1.Model;
 
 namespace part1.DAL
