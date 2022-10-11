@@ -20,15 +20,14 @@ namespace part1.DAl
             try
             {
                 var eInfo = await _db.Infoer.FindAsync(editInfo.Id);
-                if(eInfo == null)
-                {
-                    eInfo.Date = editInfo.Date;
-                    eInfo.Country = editInfo.Country;
-                    eInfo.Shape = editInfo.Shape;
-                    eInfo.Country = editInfo.Country;
-                    eInfo.Duration = editInfo.Duration;
-                    eInfo.Describtion = editInfo.Describtion;
-                }
+                
+                eInfo.Date = editInfo.Date;
+                eInfo.Country = editInfo.Country;
+                eInfo.Shape = editInfo.Shape;
+                eInfo.Country = editInfo.Country;
+                eInfo.Duration = editInfo.Duration;
+                eInfo.Describtion = editInfo.Describtion;
+                
                 await _db.SaveChangesAsync();
             }
             catch
