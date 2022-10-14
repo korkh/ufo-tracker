@@ -12,7 +12,7 @@ function hentAlle() {
 function formaterInfoer(infoer) {
     let ut = "<table class='table table-striped'>" +
         "<tr>" +
-        "<th>Date/Time</th><th>Country</th><th>Shape</th><th>Duration</th><th>Describtion</th>" +
+        "<th>Date/Time</th><th>Country</th><th>Shape</th><th>Duration</th><th>Describtion</th><th></th><th></th>" +
         "</tr>";
     for (let info of infoer) {
         ut += "<tr>" +
